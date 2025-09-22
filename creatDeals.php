@@ -14,7 +14,7 @@ class GetContacts
             'crm.item.list',
             [
                 'entityTypeId' => 3,
-                'select' => [
+                'select'       => [
                     "id",
                 ],
             ]
@@ -57,11 +57,11 @@ class DealCreator
     {
         $fields = [
             'entityTypeId' => 2,
-            'fields' => [
-                'title' => "Новая сделка для клиента с id " . $client['id'],
-                'typeId' => "Sale",
+            'fields'       => [
+                'title'      => "Новая сделка для клиента с id " . $client['id'],
+                'typeId'     => "Sale",
                 'categoryId' => 0,
-                'contactId' => $client['id'],
+                'contactId'  => $client['id'],
                 'currencyId' => "RUB",
             ],
         ];
