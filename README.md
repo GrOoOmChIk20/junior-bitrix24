@@ -37,7 +37,7 @@ php returnContactDeals.php
 ```php
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Новос");
+$APPLICATION->SetTitle("Новости");
 // Вызов компонента
 $APPLICATION->IncludeComponent(
 	"custom:mynews.list", 
